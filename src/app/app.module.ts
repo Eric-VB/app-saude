@@ -1,14 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
+
+
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './login/navbar/navbar.component';
+import { HomeComponent } from './login/navbar/home/home.component';
+import { SobreComponent } from './login/navbar/sobre/sobre.component';
+import { AppRoutes } from './app.routing';
+import { ContatoComponent } from './login/navbar/contato/contato.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    NavbarComponent,
+    
+    HomeComponent,
+    SobreComponent,
+    ContatoComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(AppRoutes)
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
