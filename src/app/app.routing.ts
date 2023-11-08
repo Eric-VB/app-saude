@@ -5,7 +5,7 @@ import { SobreComponent } from "./login/navbar/sobre/sobre.component";
 import { ContatoComponent } from "./login/navbar/contato/contato.component";
 
 export const AppRoutes: Routes = [
-    { path: '', component: HomeComponent},
+    { path: 'home', component: HomeComponent},
     { path: 'sobre', component: SobreComponent},
     { path: 'contato', component: ContatoComponent}
   ]
