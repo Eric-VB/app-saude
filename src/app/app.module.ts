@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormGroup } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -20,6 +21,7 @@ import { ContatoComponent } from './login/navbar/contato/contato.component';
     HomeComponent,
     SobreComponent,
     ContatoComponent,
+    // FormGroup
   ],
   imports: [
     BrowserModule,
