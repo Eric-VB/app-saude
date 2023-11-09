@@ -12,6 +12,7 @@ import { HomeComponent } from './login/navbar/home/home.component';
 import { SobreComponent } from './login/navbar/sobre/sobre.component';
 import { AppRoutes } from './app.routing';
 import { ContatoComponent } from './login/navbar/contato/contato.component';
+import { LocalizacaoComponent } from './login/navbar/localizacao/localizacao.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContatoComponent } from './login/navbar/contato/contato.component';
     HomeComponent,
     SobreComponent,
     ContatoComponent,
+    LocalizacaoComponent,
     // FormGroup
   ],
   imports: [
