@@ -11,6 +11,7 @@ import { HomeComponent } from './login/navbar/home/home.component';
 import { SobreComponent } from './login/navbar/sobre/sobre.component';
 import { AppRoutes } from './app.routing';
 import { ContatoComponent } from './login/navbar/contato/contato.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ContatoComponent } from './login/navbar/contato/contato.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(AppRoutes)
+    RouterModule.forRoot(AppRoutes),
+    BrowserAnimationsModule
     
   ],
   providers: [],
