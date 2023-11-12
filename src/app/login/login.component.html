@@ -2,7 +2,7 @@
   <div class="">
       <h1 class="font-thin text-xl">Entre com sua conta</h1>
   </div>
-  <div class="p-5">
+  <div class="p-5 w-80 h-80">
       <div class="pb-2 flex flex-col items-start">
         <span class="text-xs">
         	E-mail:
@@ -13,8 +13,8 @@
           <span class="text-xs">
             Senha:
           </span>
-          <input [type]="tipoDoInput" class="border-2 rounded-lg w-72 h-7 p-2" >
-          <div class="pt-2">
+          <div class="flex flex-row justify-end">
+            <input [type]="tipoDoInput" class="border-2 rounded-lg w-72 h-7 p-2" >
             <mat-icon class="scale-95" fontIcon="visibility" (click)="VerSenha()" *ngIf="tipoDoInput == 'password'"></mat-icon>            
             <mat-icon class="scale-95" fontIcon="visibility_off" (click)="EsconderSenha()" *ngIf="tipoDoInput == 'text'"></mat-icon>
           </div>
