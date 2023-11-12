@@ -15,14 +15,9 @@
           </span>
           <input [type]="tipoDoInput" class="border-2 rounded-lg w-72 h-7 p-2" >
           <div class="pt-2">
-            <button class="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" (click)="VerSenha()" *ngIf="tipoDoInput == 'password'">
-              Ver senha
-            </button>
-            <button class="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" (click)="EsconderSenha()" *ngIf="tipoDoInput == 'text'">
-              Esconder senha
-            </button>
+            <mat-icon class="scale-95" fontIcon="visibility" (click)="VerSenha()" *ngIf="tipoDoInput == 'password'"></mat-icon>            
+            <mat-icon class="scale-95" fontIcon="visibility_off" (click)="EsconderSenha()" *ngIf="tipoDoInput == 'text'"></mat-icon>
           </div>
-          
       </div>
       <div class="py-2 flex flex-col items-end">
 		<a class="pb-4 text-blue-500" href="#">Esqueceu a senha?</a>
