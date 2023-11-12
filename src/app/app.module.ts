@@ -13,7 +13,6 @@ import { SobreComponent } from './login/navbar/sobre/sobre.component';
 import { AppRoutes } from './app.routing';
 import { ContatoComponent } from './login/navbar/contato/contato.component';
 import { LocalizacaoComponent } from './login/navbar/localizacao/localizacao.component';
-import { ViewPasswordComponent } from './login/view-password/view-password.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,7 @@ import { ViewPasswordComponent } from './login/view-password/view-password.compo
     SobreComponent,
     ContatoComponent,
     LocalizacaoComponent,
-    ViewPasswordComponent,
-    // FormGroup
+
   ],
   imports: [
     BrowserModule,
