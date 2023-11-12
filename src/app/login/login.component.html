@@ -7,13 +7,22 @@
         <span class="text-xs">
         	E-mail:
         </span>
-        <input type="text" class="border-2 rounded-lg w-72 h-7">
+        <input type="text" class="border-2 rounded-lg w-72 h-7 p-2">
       </div >
       <div class="flex flex-col items-start">
           <span class="text-xs">
             Senha:
           </span>
-          <input type="password" class="border-2 rounded-lg w-72 h-7" >
+          <input [type]="tipoDoInput" class="border-2 rounded-lg w-72 h-7 p-2" >
+          <div class="pt-2">
+            <button class="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" (click)="VerSenha()" *ngIf="tipoDoInput == 'password'">
+              Ver senha
+            </button>
+            <button class="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" (click)="EsconderSenha()" *ngIf="tipoDoInput == 'text'">
+              Esconder senha
+            </button>
+          </div>
+          
       </div>
       <div class="py-2 flex flex-col items-end">
 		<a class="pb-4 text-blue-500" href="#">Esqueceu a senha?</a>
