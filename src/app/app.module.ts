@@ -14,6 +14,7 @@ import { AppRoutes } from './app.routing';
 import { ContatoComponent } from './login/navbar/contato/contato.component';
 import { LocalizacaoComponent } from './login/navbar/localizacao/localizacao.component';
 import { DadosComponent } from './login/navbar/localizacao/dados/dados.component';
+import { ItemNavegacaoComponent } from './login/navbar/item-navegacao/item-navegacao.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DadosComponent } from './login/navbar/localizacao/dados/dados.component
     ContatoComponent,
     LocalizacaoComponent,
     DadosComponent,
+    ItemNavegacaoComponent
 
   ],
   imports: [

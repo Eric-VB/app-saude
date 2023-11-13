@@ -1,51 +1,36 @@
 <div class="bg-blue-600 text-black p-5 w-full flex ">
   <div class="flex flex-row justify-start items-center gap-3 w-full pl-16">
+    
+    <!-- Titulo -->
     <a routerLink="/home">
       <span class="text-blue-50 text-4xl" id="titulo">
         Saúde 2.0
       </span>
     </a>
-    <a routerLinkActive="active" routerLink="/sobre">
-      <span
-        id="sobre"
-        class="flex flex-row items-center gap-2 text-blue-50 hover:bg-blue-500 hover:text-white rounded-md px-3 py-4 text-sm font-medium">
-        <mat-icon class="scale-95" fontIcon="info"></mat-icon>
-        Sobre
-      </span>
-    </a>
-    <a routerLinkActive="active" routerLink="/contato">
-      <span
-        id="contato"
-        class="flex flex-row items-center gap-2 text-blue-50 hover:bg-blue-500 hover:text-white rounded-md px-2 py-4 text-sm font-medium border-spacing-5">
-        <mat-icon class="scale-95" fontIcon="group"></mat-icon>
-        <span>
-          Contato
-        </span>
-      </span>
-    </a>
-   
-    <a routerLinkActive="active" routerLink="/unidades">
-      <span
-        id="localizacao"
-        class="flex flex-row items-center gap-2 text-blue-50 hover:bg-blue-500 hover:text-white rounded-md px-2 py-4 text-sm font-medium border-spacing-5">
-        <mat-icon class="scale-95" fontIcon="travel_explore"></mat-icon>
-        <span>
-          Unidades
-        </span>
-      </span>
-    </a>
 
-    <div>
-      <a routerLinkActive="active" routerLink="/login">
-        <span
-          id="Login"
-          class="flex flex-row items-center gap-2 text-blue-50 hover:bg-blue-500 hover:text-white rounded-md px-2 py-4 text-sm font-medium border-spacing-5">
-          <mat-icon class="scale-95" fontIcon="login"></mat-icon>
-          <span>
-            Login
-          </span>
-        </span>
-      </a>
-    </div>
+    <!-- Sobre -->
+    <app-item-navegacao
+      [link]="'/sobre'"
+      [icone]="'info'"
+      [titulo]="'Sobre'"></app-item-navegacao>
+
+    <!-- Contato -->
+    <app-item-navegacao
+      [link]="'/contato'"
+      [icone]="'group'"
+      [titulo]="'Contato'"></app-item-navegacao>
+
+    <!-- Unidades -->
+    <app-item-navegacao
+      [link]="'/unidades'"
+      [icone]="'travel_explore'"
+      [titulo]="'Unidades'"></app-item-navegacao>
+
+    <!-- Login -->
+    <app-item-navegacao
+      [link]="'/login'"
+      [icone]="'login'"
+      [titulo]="'Login'"></app-item-navegacao>
+      
   </div>
 </div>
